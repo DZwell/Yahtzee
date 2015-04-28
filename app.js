@@ -10,7 +10,4 @@
   for (var i = 0; i < 5; i++) {
     myArr[i] = new Dice(Dice.roll);
   }
-
-  console.log(myArr);
-
 })();
