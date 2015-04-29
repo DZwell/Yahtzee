@@ -1,7 +1,7 @@
-$(document).ready(function() {
+// $(document).ready(function() {
 
-  $('#die1').click(function() {
-    $('#1').append('<p>Hello</p>');
+  $('#1').click(function() {
+    $('#die1').append('<p>Hello</p>');
   });
 
-});
+// });

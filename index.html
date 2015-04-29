@@ -23,9 +23,16 @@
   </section>
   <section id='all'>
     <button type="button">All</button>
+  <script src="deps/jquery.js"></script>
+  <script>
+
+    $('#1').click(function() {
+      $('#die1').append('<p>' + myArr[0].roll + '</p>');
+    });
+
+  </script>
+  <script type="text/javascript" src="app.js"></script>
+<!--   // <script type="text/jquery" src="script.js"></script> -->
   </section>
 </body>
-<script src="deps/jquery.js"></script>
-<script type="text/javascript" src="app.js"></script>
-<script type="text/jquery" src="script.js"></script>
 </html>
