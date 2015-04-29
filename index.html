@@ -23,15 +23,39 @@
     <section id='5'>
       <button type="button" id="die5">5</button>
     </section>
-    <section id='all'>
-      <button type="button">All</button>
+    <section id='last'>
+      <button type="button" id="all">All</button>
     <script src="deps/jquery.js"></script>
   </div>
   <script>
 
-    $('#die1').click(function() {
+    $('#die1').one('click', function() {
       $('#1').append('<p>' + myArr[0].roll + '</p>');
     });
+
+     $('#die2').one('click', function() {
+      $('#2').append('<p>' + myArr[1].roll + '</p>');
+    });
+
+     $('#die3').one('click', function() {
+      $('#3').append('<p>' + myArr[2].roll + '</p>');
+    });
+
+     $('#die4').one('click', function() {
+      $('#4').append('<p>' + myArr[3].roll + '</p>');
+    });
+
+     $('#die5').one('click', function() {
+      $('#5').append('<p>' + myArr[4].roll + '</p>');
+    });
+
+     $('#all').click(function() {
+        $('#die1').click();
+        $('#die2').click();
+        $('#die3').click();
+        $('#die4').click();
+        $('#die5').click();
+     });
 
   </script>
   <script type="text/javascript" src="app.js"></script>
