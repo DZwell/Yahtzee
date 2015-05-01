@@ -15,3 +15,8 @@ for (var i = 0; i < myArr.length; i++ ) {
 };
 
 myArr.push(total);
+
+
+sessionStorage['myArr'] = JSON.stringify(myArr);
+var storedArry = JSON.parse(sessionStorage['myArr']);
+console.log(sessionStorage);
