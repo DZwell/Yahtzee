@@ -9,12 +9,12 @@ for (var i = 0; i < 5; i++) {
 }
 
 // add total
-var total = 0;
-for (var i = 0; i < myArr.length; i++ ) {
-  total += myArr[i].roll;
-};
+// var total = 0;
+// for (var i = 0; i < myArr.length; i++ ) {
+//   total += myArr[i].roll;
+// };
 
-myArr.push(total);
+// myArr.push(total);
 
 
 sessionStorage['myArr'] = JSON.stringify(myArr);
@@ -26,6 +26,8 @@ console.log(sessionStorage);
 // within varible, new object is created, pushed to array, etc
 
 var newRoll = function() {
+  myArr = [];
+
   for (var i = 0; i < 5; i++) {
     myArr[i] = new Dice(Dice.roll);
   };
