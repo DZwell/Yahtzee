@@ -29,7 +29,4 @@ var newRoll = function() {
 
 document.getElementById("rel").addEventListener("click", newRoll);
 
-// issues
-// rolls do not change on screen but do in console
-
 // save buttons
