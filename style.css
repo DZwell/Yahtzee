@@ -12,3 +12,8 @@ body {
 section {
   display: inline-block;
 }
+table {
+  border-radius: 5%;
+  border-color: black;
+  border-width: 50%;
+}

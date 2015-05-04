@@ -30,27 +30,50 @@
     <section id='reload'>
       <button id='rel'>Reroll!</button>
     </section>
+    <section>
+    <table>
+      <th></th>
+      <th id="turn1">Turn 1</th>
+      <th id="turn2">Turn 2</th>
+      <th id="turn2">Turn 3</th>
+        <tr id="row1">
+          <td id="d1">Die #1:</td>
+        </tr>
+        <tr id="row2">
+          <td id="d2">Die#2:</td>
+        </tr>
+      <tr id="row3">
+        <td id="d3">Die #3:</td>
+      </tr>
+      <tr id="row4">
+        <td id="d4">Die #4:</td>
+      </tr>
+      <tr id="row5">
+        <td id="d5">Die #5:</td>
+      </tr>
+    </table>
+  </section>
   </div>
   <script>
 
     $('#die1').one('click', function() {
-      $('#1').append('<p>' + myArr[0].roll + '</p>');
+      $('#row1').append('<p>' + storedArray[0].roll + '</p>');
     });
 
      $('#die2').one('click', function() {
-      $('#2').append('<p>' + myArr[1].roll + '</p>');
+      $('#row2').append('<p>' + storedArray[1].roll + '</p>');
     });
 
      $('#die3').one('click', function() {
-      $('#3').append('<p>' + myArr[2].roll + '</p>');
+      $('#row3').append('<p>' + storedArray[2].roll + '</p>');
     });
 
      $('#die4').one('click', function() {
-      $('#4').append('<p>' + myArr[3].roll + '</p>');
+      $('#row4').append('<p>' + storedArray[3].roll + '</p>');
     });
 
      $('#die5').one('click', function() {
-      $('#5').append('<p>' + myArr[4].roll + '</p>');
+      $('#row5').append('<p>' + storedArray[4].roll + '</p>');
     });
 
      $('#all').click(function() {
