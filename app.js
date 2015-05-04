@@ -18,6 +18,8 @@ console.log(sessionStorage);
 // adds new empty array and creates 5 new dice
 
 var newRoll = function() {
+  $('p').empty();
+
   myArr = [];
 
   for (var i = 0; i < 5; i++) {
@@ -29,3 +31,5 @@ document.getElementById("rel").addEventListener("click", newRoll);
 
 // issues
 // rolls do not change on screen but do in console
+
+// save buttons
